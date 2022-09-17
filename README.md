@@ -39,7 +39,8 @@ docker-compose run --rm app sh -c "python manage.py createsuperuser"
 you can use Postman or vscode Thunder Client for api.
 
 then first generate token
-method -> POST    http://127.0.0.1:8000/api/token/
+
+method == POST    http://127.0.0.1:8000/api/token/
 ```bash
 {
   "username":"xxx",
@@ -48,7 +49,9 @@ method -> POST    http://127.0.0.1:8000/api/token/
 ```
 
 You can test api
+
 first you can create company
+
 method == POST     http://127.0.0.1:8000/api/company/
 
 ```bash
@@ -61,13 +64,18 @@ method == POST     http://127.0.0.1:8000/api/company/
 ```
 
 you can see the detail about company using
+
 method == GET   http://127.0.0.1:8000/api/company/46755041-e6ec-4ea9-a9f3-964cbb98b6f4/
+
                                                        ^^^ your comapny uuid
 
 
 In this company created team
+
 method == POST  http://127.0.0.1:8000/api/company/46755041-e6ec-4ea9-a9f3-964cbb98b6f4/team/
+
                                                        ^^^ your comapny uuid
+
 ```bash
 {
     "Lead_Name": "team lead name"
@@ -75,11 +83,14 @@ method == POST  http://127.0.0.1:8000/api/company/46755041-e6ec-4ea9-a9f3-964cbb
 ```
 
 all team detail see using
+
 method == GET http://127.0.0.1:8000/api/team/
 
 
 search comapny name and receive the detail
+
 method == POST   http://127.0.0.1:8000/api/search/
+
 ```bash
 {
     "name": "comapny name"
