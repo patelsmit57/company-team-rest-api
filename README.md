@@ -67,14 +67,14 @@ you can see the detail about company using
 
 method == GET   http://127.0.0.1:8000/api/company/46755041-e6ec-4ea9-a9f3-964cbb98b6f4/
 
-46755041-e6ec-4ea9-a9f3-964cbb98b6f4 is comapny uuid
+46755041-e6ec-4ea9-a9f3-964cbb98b6f4 is comapny uuid insert your comapny uuid
 
 
 In this company created team
 
 method == POST  http://127.0.0.1:8000/api/company/46755041-e6ec-4ea9-a9f3-964cbb98b6f4/team/
 
-46755041-e6ec-4ea9-a9f3-964cbb98b6f4 is comapny uuid
+46755041-e6ec-4ea9-a9f3-964cbb98b6f4 is comapny uuid insert your comapny uuid
 
 ```bash
 {
