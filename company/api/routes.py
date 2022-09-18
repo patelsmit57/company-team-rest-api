@@ -11,7 +11,7 @@ class getRoutes(APIView):
             {'POST': '/api/refresh_token'},
 
             {'POST': '/api/company'},
-            {'GET': '/api/ceam'},
+            {'GET': '/api/team'},
             {'POST': '/api/company/uuid/team'},
             {'POST' : 'api/search'},
             {'GET': 'api/company/uuid'},
